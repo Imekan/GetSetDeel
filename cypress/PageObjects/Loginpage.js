@@ -8,26 +8,21 @@ class Login
 }
 
 setPassword(password)
-
 {
     cy.get ("input[placeholder='Password']").type ('password');
-   
+
    }
 
 
    clickSubmit()
-
 {
-    cy.get ("button[type='submit']").click();
-   
+    cy.get('.oxd-button').click();
    }
 
 
    verifyLogin ()
-
 {
     cy.get (".oxd-topbar-header-breadcrumb > .oxd-text").should('have.text','Dashboard');
-   
    }
 
 } 
