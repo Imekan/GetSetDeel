@@ -4,7 +4,7 @@ import Login from "../PageObjects/Loginpage.js"
 
 
 describe('pom', () =>{
-
+    const ln=new Login();
 //General approach
 it ('loginTest', () =>{
 cy.visit ("https://opensource-demo.orangehrmlive.com/")
@@ -17,10 +17,8 @@ cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').should('have.text', 'Dashboa
 //using Page object Model
 it.only ('loginTest', () =>{
     cy.visit ("https://opensource-demo.orangehrmlive.com/") // Visits the URL
-
-    const ln=new Login();
-    ln.setUserName("Admin")
-    ln.setPassword("admin123")
+    ln.setUserName();
+    ln.setPassword();
     ln.clickSubmit();
     ln.verifyLogin();
 

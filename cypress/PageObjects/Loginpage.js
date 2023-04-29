@@ -3,13 +3,13 @@ class Login
 
  setUserName(username)
 {
- cy.get ("input[placeholder='Username']").type ('username');
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').click().type('Admin').should('exist');
 
 }
 
 setPassword(password)
 {
-    cy.get ("input[placeholder='Password']").type ('password');
+    cy.get("input[placeholder='Password']").type('admin123');
 
    }
 
