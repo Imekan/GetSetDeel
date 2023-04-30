@@ -17,7 +17,7 @@ cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').should('have.text', 'Dashboa
 //using Page object Model
 it.only ('loginTest', () =>{
     cy.visit ("https://opensource-demo.orangehrmlive.com/") // Visits the URL
-    ln.setUserName();
+    ln.setUserName(); // type the username
     ln.setPassword();
     ln.clickSubmit();
     ln.verifyLogin();
