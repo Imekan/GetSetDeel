@@ -4,7 +4,7 @@ import Login from "../PageObjects/Loginpage.js"
 
 
 describe('pom', () =>{
-    const ln=new Login();
+    const ln=new Login();  // conatant declaration for Login
 //General approach
 it ('loginTest', () =>{
 cy.visit ("https://opensource-demo.orangehrmlive.com/")
