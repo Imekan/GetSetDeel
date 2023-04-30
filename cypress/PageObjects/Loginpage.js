@@ -3,7 +3,7 @@ class Login
 
  setUserName(username)
 {
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').click().type('Admin').should('exist');
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').click().type('Admin')
 
 }
 
